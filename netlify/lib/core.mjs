@@ -267,7 +267,7 @@ export async function handle(req, opts) {
     if (head === 'leader') {
       if (!opts.leaderPasscode) return err('Leader tools are off. Add LEADER_PASSCODE in Netlify → Site configuration → Environment variables.', 403);
       const given = req.headers.get('x-leader-passcode') || url.searchParams.get('lk');
-      if (given !== opts.leaderPasscode) return err('Wrong leader passcode.', 401);
+      if (!same(given, opts.leaderPasscode)) return err('Wrong leader passcode.', 401);
       return leader(store, req, rest, body, now);
     }
 

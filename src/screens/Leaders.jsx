@@ -31,8 +31,8 @@ export default function Leaders() {
 
   if (!ok) return (
     <div className="content"><PageHead backTo="home" title="Leader tools" sub="For Pack 6 leaders. Enter the leader passcode." />
-      <form className="card narrow" onSubmit={e => { e.preventDefault(); login(); }}>
-        <label className="field"><span>Leader passcode</span><input type="password" value={pass} onChange={e => setPass(e.target.value)} autoComplete="current-password" /></label>
+      <form className="card narrow" onSubmit={e => { e.preventDefault(); login(pass.trim()); }}>
+        <label className="field"><span>Leader passcode</span><input type="password" value={pass} onChange={e => setPass(e.target.value)} autoComplete="current-password" autoCapitalize="none" autoCorrect="off" spellCheck="false" /></label>
         {err && <p className="form-msg" role="alert">{err}</p>}
         <button className="btn">Open leader tools</button>
       </form>
