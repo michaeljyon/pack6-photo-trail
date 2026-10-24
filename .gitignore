@@ -1,0 +1,6 @@
+node_modules
+dist
+.data
+.netlify
+*.zip
+pack6-preview.png

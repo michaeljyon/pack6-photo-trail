@@ -1,0 +1,34 @@
+<!doctype html><html><head><style>
+@font-face{font-family:F;src:url(../node_modules/@fontsource/fredoka/files/fredoka-latin-700-normal.woff2)}
+@font-face{font-family:F6;src:url(../node_modules/@fontsource/fredoka/files/fredoka-latin-600-normal.woff2)}
+html,body{margin:0;background:transparent}
+#wrap{width:512px;height:512px;display:grid;place-items:center;background:var(--bg,transparent)}
+svg{width:var(--s,512px);height:var(--s,512px)}
+</style></head><body><div id="wrap">
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="sky" cx="50%" cy="38%" r="65%"><stop offset="0" stop-color="#1F5DC4"/><stop offset="1" stop-color="#0B3B8C"/></radialGradient>
+  <path id="top" d="M 66 256 A 190 190 0 0 1 446 256"/>
+  <path id="bot" d="M 52 256 A 204 204 0 0 0 460 256"/>
+  <clipPath id="disc"><circle cx="256" cy="256" r="158"/></clipPath>
+</defs>
+<circle cx="256" cy="256" r="250" fill="#F5B81C"/>
+<circle cx="256" cy="256" r="236" fill="#072A66"/>
+<circle cx="256" cy="256" r="226" fill="none" stroke="#F5B81C" stroke-width="3" stroke-dasharray="9 7" opacity=".85"/>
+<text font-family="F" font-size="44" letter-spacing="5" fill="#F5B81C" text-anchor="middle"><textPath href="#top" startOffset="50%">CUB SCOUT PACK 6</textPath></text>
+<text font-family="F6" font-size="30" letter-spacing="6" fill="#FFFFFF" text-anchor="middle" dominant-baseline="hanging"><textPath href="#bot" startOffset="50%">TALLAHASSEE · FLORIDA</textPath></text>
+<circle cx="88" cy="262" r="7" fill="#F5B81C"/><circle cx="424" cy="262" r="7" fill="#F5B81C"/>
+<circle cx="256" cy="256" r="162" fill="#F5B81C"/>
+<g clip-path="url(#disc)">
+  <rect x="0" y="0" width="512" height="512" fill="url(#sky)"/>
+  <g fill="#FFFFFF"><circle cx="170" cy="150" r="3"/><circle cx="214" cy="122" r="2.2"/><circle cx="300" cy="140" r="2.4"/><circle cx="150" cy="200" r="2"/><circle cx="356" cy="210" r="2.2"/></g>
+  <path d="M 352 132 a 34 34 0 1 0 22 58 a 28 28 0 1 1 -22 -58 z" fill="#F5B81C"/>
+  <path d="M 70 340 Q 180 290 300 318 T 450 300 L 450 450 L 70 450 Z" fill="#0F4AA8"/>
+  <g fill="#072A66">
+    <path d="M 128 360 L 160 270 L 192 360 Z M 136 318 L 160 240 L 184 318 Z M 144 282 L 160 214 L 176 282 Z"/><rect x="154" y="356" width="12" height="18"/>
+    <path d="M 318 356 L 352 262 L 386 356 Z M 326 312 L 352 232 L 378 312 Z M 335 276 L 352 206 L 369 276 Z"/><rect x="346" y="352" width="12" height="18"/>
+    <path d="M 60 380 Q 256 330 452 380 L 452 452 L 60 452 Z"/>
+  </g>
+</g>
+<text x="256" y="330" font-family="F" font-size="196" fill="#F5B81C" stroke="#072A66" stroke-width="10" paint-order="stroke" text-anchor="middle">6</text>
+</svg></div></body></html>
